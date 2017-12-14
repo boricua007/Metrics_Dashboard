@@ -2,11 +2,18 @@
 using DAL.Classes;
 using System.Data;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace BLL
 {
     public class Dashboard_BL
     {
+        // DROPDOWN LIST LOAD
+
+
+
+
         public void CreateClient( string firstName, string lastName, string email, string password )
         {
             var newClient = new Client( )
@@ -46,5 +53,6 @@ namespace BLL
                 db.SaveChanges( );
             }
         }
+
     }
 }

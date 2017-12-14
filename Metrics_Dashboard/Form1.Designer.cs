@@ -90,6 +90,7 @@
             this.cboClientNameList.Name = "cboClientNameList";
             this.cboClientNameList.Size = new System.Drawing.Size(182, 24);
             this.cboClientNameList.TabIndex = 67;
+            // this.cboClientNameList.SelectedIndexChanged += new System.EventHandler(this.cboClientNameList_SelectedIndexChanged);
             // 
             // txtClientLastName
             // 

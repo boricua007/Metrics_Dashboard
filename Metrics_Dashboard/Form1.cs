@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using DAL;
 using DAL.Classes;
+using System.Linq;
 
 namespace Metrics_Dashboard
 {
@@ -20,6 +14,13 @@ namespace Metrics_Dashboard
             InitializeComponent( );
         }
 
+        // DROP DOWN SELECTORS BELOW
+        private void Form1_Load_1( object sender, EventArgs e )
+        {
+
+        }
+
+        // EVENT HANDLERS
         private void btnClient_Save_Click( object sender, EventArgs e )
         {
             var bl = new Dashboard_BL( );
