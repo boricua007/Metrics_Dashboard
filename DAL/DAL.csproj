@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Classes\Client.cs" />
     <Compile Include="DataConn_DB.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
