@@ -42,7 +42,7 @@ namespace Metrics_Dashboard
             // Push New Updates to BL
             var bl = new Dashboard_BL( );
             bl.UpdateClient( clientId, client );
-            MessageBox.Show( "Client Info Updated Successfuly" );
+            MessageBox.Show( "Client Info Updated Successfully" );
         }
 
         private void btnClient_Delete_Click( object sender, EventArgs e )
@@ -54,7 +54,7 @@ namespace Metrics_Dashboard
             // Push Delete of Client to BL
             var bl = new Dashboard_BL( );
             bl.DeleteClient( clientId );
-            MessageBox.Show( "Client Info Deleted Successfully " );            
+            MessageBox.Show( "Client Info Deleted Successfully" );            
         }
     }
 }
