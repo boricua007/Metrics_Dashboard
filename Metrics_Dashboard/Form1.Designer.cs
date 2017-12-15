@@ -104,14 +104,14 @@
             this.lblClientLastName.AutoSize = true;
             this.lblClientLastName.Location = new System.Drawing.Point(112, 139);
             this.lblClientLastName.Name = "lblClientLastName";
-            this.lblClientLastName.Size = new System.Drawing.Size(84, 17);
+            this.lblClientLastName.Size = new System.Drawing.Size(80, 17);
             this.lblClientLastName.TabIndex = 66;
-            this.lblClientLastName.Text = "Last Name: ";
+            this.lblClientLastName.Text = "Last Name:";
             // 
             // lblClient_SelectClient
             // 
             this.lblClient_SelectClient.AutoSize = true;
-            this.lblClient_SelectClient.Location = new System.Drawing.Point(484, 103);
+            this.lblClient_SelectClient.Location = new System.Drawing.Point(498, 107);
             this.lblClient_SelectClient.Name = "lblClient_SelectClient";
             this.lblClient_SelectClient.Size = new System.Drawing.Size(90, 17);
             this.lblClient_SelectClient.TabIndex = 64;
@@ -184,27 +184,27 @@
             this.lblClientFirstName.AutoSize = true;
             this.lblClientFirstName.Location = new System.Drawing.Point(112, 107);
             this.lblClientFirstName.Name = "lblClientFirstName";
-            this.lblClientFirstName.Size = new System.Drawing.Size(84, 17);
+            this.lblClientFirstName.Size = new System.Drawing.Size(80, 17);
             this.lblClientFirstName.TabIndex = 59;
-            this.lblClientFirstName.Text = "First Name: ";
+            this.lblClientFirstName.Text = "First Name:";
             // 
             // lblClientEmail
             // 
             this.lblClientEmail.AutoSize = true;
-            this.lblClientEmail.Location = new System.Drawing.Point(142, 177);
+            this.lblClientEmail.Location = new System.Drawing.Point(146, 177);
             this.lblClientEmail.Name = "lblClientEmail";
-            this.lblClientEmail.Size = new System.Drawing.Size(54, 17);
+            this.lblClientEmail.Size = new System.Drawing.Size(46, 17);
             this.lblClientEmail.TabIndex = 60;
-            this.lblClientEmail.Text = "Email:  ";
+            this.lblClientEmail.Text = "Email:";
             // 
             // lblClientPassword
             // 
             this.lblClientPassword.AutoSize = true;
-            this.lblClientPassword.Location = new System.Drawing.Point(115, 205);
+            this.lblClientPassword.Location = new System.Drawing.Point(119, 205);
             this.lblClientPassword.Name = "lblClientPassword";
-            this.lblClientPassword.Size = new System.Drawing.Size(81, 17);
+            this.lblClientPassword.Size = new System.Drawing.Size(73, 17);
             this.lblClientPassword.TabIndex = 61;
-            this.lblClientPassword.Text = "Password:  ";
+            this.lblClientPassword.Text = "Password:";
             // 
             // tabPage2
             // 
