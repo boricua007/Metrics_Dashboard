@@ -67,11 +67,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Scripts\angular-animate.min.js" />
-    <Content Include="Scripts\angular-route.min.js" />
-    <Content Include="Scripts\angular.min.js.map" />
-    <Content Include="Scripts\angular-animate.min.js.map" />
-    <Content Include="Scripts\angular-route.min.js.map" />
+    <Content Include="css\style.css" />
+    <Content Include="images\3Metas-Logo-small.png" />
+    <Content Include="images\3Metas-Logo.png" />
+    <Content Include="Scripts\angular\angular-animate.min.js" />
+    <Content Include="Scripts\angular\angular-route.min.js" />
+    <Content Include="Scripts\angular\angular.min.js.map" />
+    <Content Include="Scripts\angular\angular-animate.min.js.map" />
+    <Content Include="Scripts\angular\angular-route.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -81,9 +84,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
-    <Content Include="Scripts\angular-mocks.js" />
-    <Content Include="Scripts\angular.js" />
-    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\angular\angular-mocks.js" />
+    <Content Include="Scripts\angular\angular.js" />
+    <Content Include="Scripts\angular\angular.min.js" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\controllers\client.js" />
+    <Content Include="Scripts\controllers\registration.js" />
+    <Content Include="Scripts\controllers\success.js" />
+    <Content Include="views\client.html" />
+    <Content Include="views\login.html" />
+    <Content Include="views\nav.html" />
+    <Content Include="views\register.html" />
+    <Content Include="views\success.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

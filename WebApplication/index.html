@@ -1,14 +1,30 @@
 ﻿<!DOCTYPE html>
-zz
+<html lang="en" ng-app="dashboardApp">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Metrics Dashboard</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script src="Scripts/angular/angular.min.js"></script>
+    <script src="Scripts/angular/angular.min.js"></script>
+    <script src="Scripts/angular/angular-route.min.js"></script>
+    <script src="Scripts/angular/angular-animate.min.js"></script>
+
+    <script src="Scripts/app.js"></script>
+    <script src="Scripts/controllers/registration.js"></script>
+    <script src="Scripts/controllers/client.js"></script>
 </head>
 <body>
-    <p>Metrics Dashboard using Angular</p>
-
-
-    <!-- Angular scripts -->
-    <script src="Scripts/angular.min.js"></script>
+    <header>
+        <nav class="cf" ng-include=" 'views/nav.html' "></nav>
+    </header>
+    <div class="page">
+        <main class="cf" ng-view>
+            {{ message }}
+        </main>
+    </div>
 </body>
 </html>
