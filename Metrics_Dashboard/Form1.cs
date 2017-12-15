@@ -14,11 +14,19 @@ namespace Metrics_Dashboard
             InitializeComponent( );
         }
 
-        // DROP DOWN SELECTORS BELOW
+        // DROP DOWN LISTS 
         private void Form1_Load_1( object sender, EventArgs e )
         {
+            var bl = new Dashboard_BL( );
+
+            // Load List
+            cboClientNameList.ValueMember = "Id";
+            cboClientNameList.DisplayMember = "FirstName";
+            cboClientNameList.DataSource = bl.GetClients( );
 
         }
+
+
 
         // EVENT HANDLERS
         private void btnClient_Save_Click( object sender, EventArgs e )
@@ -57,5 +65,23 @@ namespace Metrics_Dashboard
             bl.DeleteClient( clientId );
             MessageBox.Show( "Client Info Deleted Successfully" );            
         }
+
+        private void cboClientNameList_SelectedIndexChanged( object sender, EventArgs e )
+        {
+            var bl = new Dashboard_BL( );
+            var clientToLoad = bl.GetClient( Convert.ToInt32( cboClientNameList.SelectedValue.ToString( ) ) );
+
+            if ( clientToLoad == null )
+            {
+                return;
+            }
+            else
+            {
+                txtClientFirstName.Text = clientToLoad.FirstName;
+                txtClientLastName.Text = clientToLoad.LastName;
+                txtClientEmail.Text = clientToLoad.Email;
+            }
+        }
+
     }
 }

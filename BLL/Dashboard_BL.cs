@@ -10,7 +10,13 @@ namespace BLL
     public class Dashboard_BL
     {
         // DROPDOWN LIST LOAD
-
+        public List<Client> GetClients( )
+        {
+            using ( var db = new DataConn_DB( ) )
+            {
+                return db.clients.ToList( );
+            }
+        }
 
 
 
@@ -54,5 +60,13 @@ namespace BLL
             }
         }
 
+        public Client GetClient( int clientId )
+        {
+            using ( var db = new DataConn_DB( ) )
+            {
+                var currentClient = db.clients.Where( x => x.Id == clientId ).FirstOrDefault( );
+                return currentClient;
+            }
+        }
     }
 }

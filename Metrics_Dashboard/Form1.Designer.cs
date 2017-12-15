@@ -90,7 +90,7 @@
             this.cboClientNameList.Name = "cboClientNameList";
             this.cboClientNameList.Size = new System.Drawing.Size(182, 24);
             this.cboClientNameList.TabIndex = 67;
-            // this.cboClientNameList.SelectedIndexChanged += new System.EventHandler(this.cboClientNameList_SelectedIndexChanged);
+            this.cboClientNameList.SelectedIndexChanged += new System.EventHandler(this.cboClientNameList_SelectedIndexChanged);
             // 
             // txtClientLastName
             // 
@@ -224,6 +224,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
